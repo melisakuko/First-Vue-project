@@ -19,6 +19,7 @@
     width: 95%;
     margin: 0 auto;
     border-radius: 5px;
+    text-align: center;
   }
   
   .header-section a {

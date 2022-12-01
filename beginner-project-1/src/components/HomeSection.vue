@@ -2,7 +2,7 @@
     <div class="home-section">
         <h1>Welcome to my page</h1>
         <v-container>
-            <v-card class="mx-auto" v-for="element in cardsArray" :key="element.id">
+            <v-card class="mx-2" v-for="element in cardsArray" :key="element.id">
                 <v-card-text>
                     <p class="text-h4 text--primary">
                         {{ element.title }}
@@ -56,6 +56,5 @@ export default {
 }
 .v-container {
     display: flex;
-    justify-content: space-around;
 }
 </style>

@@ -2,7 +2,7 @@
     <div class="container my-14 mx-auto">
      <v-select
       v-model="select"
-      :items="items"
+      :items="itemArray"
       :rules="[v => !!v || 'Item is required']"
       label="What can we help you with?"
       required
@@ -41,7 +41,12 @@
 
 <script>
   export default {
-    name: "ContactSection"
+    name: "ContactSection",
+    data () {
+      return{
+        itemArray: ['First Item', 'Second Item', 'Third Item'],
+      }
+    }
   }
 </script>
 
